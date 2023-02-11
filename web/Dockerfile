@@ -1,11 +1,11 @@
-FROM node:16-alpine
+FROM node:16
 
 ENV NODE_ENV=production
 ENV SESSION_SECRET=fnVBBJm5KuDOkvTjxP7duwTDFBnkpqR6lctM6X8rYTZjoNUlxa
 
 RUN mkdir -p /usr/src/app
 
-RUN apk add openssl1.1-compat
+# RUN apk add openssl1.1-compat
 
 WORKDIR /usr/src/app
 
